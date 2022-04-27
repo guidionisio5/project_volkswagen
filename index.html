@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importação do Font awesone / Colocar ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Compra</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        html{
-            background-color: #205DAE;
+        html {
+            background-color: #002b62;
         }
-        body{
+
+        body {
             width: 80%;
             margin: 50px auto;
             border-radius: 4px;
@@ -20,32 +29,34 @@
             background-color: #FFF;
         }
 
-        h1{
+        h1 {
             text-align: center;
             color: #FFF;
-            background-color:#205DAE;
+            background-color: #205DAE;
         }
 
-        h2{
+        h2 {
             text-align: center;
         }
 
-        h3{
+        h3 {
             text-align: center;
         }
 
-        .img2{
-            display:block;
+        .img2 {
+            display: block;
             margin: 0 auto;
         }
 
-        p{
+        p {
             text-align: center;
         }
-        .rodape{
-           padding:5px ; 
+
+        .rodape {
+            padding: 5px;
         }
-        .icon{
+
+        .icon {
             width: 15px;
             height: 15px;
 
@@ -55,26 +66,67 @@
 </head>
 
 <body>
+    <div id="container">
+    <header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#informacoes">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Informações
+                </a>
+            </li>
+
+            <li>
+                <a href="#imagem">
+                    <i class="fa-solid fa-image"></i>
+                    Imagem
+                </a>
+            </li>
+
+            <li>
+                <a href="#compra">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Compra
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    </header>
     <br>
     <img class="img2" src="img/logo.jfif" alt="Logo volkswagen" width="300px">
     <br>
-    <h1>Golf GTI 2022</h1>
-    <p>O automóvel está mudando de cara, e a <a href="https://www.vw.com.br/pt.html" target="blank" style="color: #205DAE">Volkswagen</a> 
-        está entre os líderes dessa revolução. 
-        Mas, ao menos na Europa, o Golf GTI – temporariamente fora do mercado brasileiro, 
-        como todas as outras versões do hatch – segue firme em seu lugar. 
-        Inabalável. Inoxidável. Nenhum hot hatch tem tanta tradição, e este aqui ainda foi o inventor do gênero. 
-        Hoje ele segue no topo do ranking, não por direito nem por ser o mais rápido deles, mas pela maestria com a qual, 
-        ao longo de tantas décadas, vem mesclando desempenho, conforto e versatilidade. 
+    <div id="informacoes"><h1>Golf GTI 2022</h1>
+    <p>O automóvel está mudando de cara, e a <a href="https://www.vw.com.br/pt.html" target="blank"
+            style="color: #205DAE">Volkswagen</a>
+        está entre os líderes dessa revolução.
+        Mas, ao menos na Europa, o Golf GTI – temporariamente fora do mercado brasileiro,
+        como todas as outras versões do hatch – segue firme em seu lugar.
+        Inabalável. Inoxidável. Nenhum hot hatch tem tanta tradição, e este aqui ainda foi o inventor do gênero.
+        Hoje ele segue no topo do ranking, não por direito nem por ser o mais rápido deles, mas pela maestria com a
+        qual,
+        ao longo de tantas décadas, vem mesclando desempenho, conforto e versatilidade.
         Os 245 cv do motor 2.0 são suficientes para mover os 1.535 quilos deste Golf como se deve.<br>
-        Para mais detalhes sobre o carro assista o 
+        Para mais detalhes sobre o carro assista o
         <a href="https://www.youtube.com/watch?v=xFzoebmc_Ws" target="blank" style="color: #205DAE ;">vídeo</a>.
     </p>
+    </div>
     <br>
-    <img class="img2" src="img/golf.webp" alt="Foto do Golf GTI 2022" width="1000px">
+    <div id="imagem"><img class="img2" src="img/golf.webp" alt="Foto do Golf GTI 2022" width="1000px"></div>
 
-    <h2>Preço do veículo R$:130.000,00</h2>   
-    
+    <div id="compra"><h2>Preço do veículo R$:130.000,00</h2>
+
     <h3>Pintura do Veículo</h3>
     <form>
         <input type="radio" name="cor" id="vermelho">
@@ -85,16 +137,16 @@
 
         <input type="radio" name="cor" id="amarelo">
         <label for="amarelo">Amarelo</label>
-        
+
         <input type="radio" name="cor" id="verde">
         <label for="verde">Verde</label>
 
         <input type="radio" name="cor" id="azul">
         <label for="azul">Azul</label>
-    
+
         <input type="radio" name="cor" id="roxo">
         <label for="roxo">Roxo</label>
-    
+
         <input type="radio" name="cor" id="rosa">
         <label for="rosa">Rosa</label>
 
@@ -112,15 +164,15 @@
 
         <input type="radio" name="cor" id="preto">
         <label for="preto">Preto</label>
-    
-            <h3>Adicionais</h3>
+
+        <h3>Adicionais</h3>
         <ul>
             <li>Vidro elétrico R$:350,00</li>
             <li>Alarme de segurança R$:400,00</li>
             <li>Ar-condicionado R$:700,00</li>
             <li>Direção elética R$:550,00</li>
             <li>Rádio R$:250,00</li>
-         </ul>
+        </ul>
 
         <input type="checkbox" name="adicionais" id="vidro">
         <label for="vidro">Vidro elétrico</label>
@@ -136,28 +188,36 @@
 
         <input type="checkbox" name="adicionais" id="radio">
         <label for="radio">Rádio</label>
-        
+
         <br><br>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </form>
-    
+    </div>
     <hr>
 
     <div class="rodape">
-    <p style="text-align:left;">&copy; Desenvolvidor por: <b>Guilherme</b></p>
-    
-    <img class="icon" src="img/gmail.png"><a href="guidionisio5@gmail.com" style=" color: #205DAE;">
-        <small>guidionisio5@gmail.com</small>
-    </a>
-    
-    <br>
+        <p style="text-align:left;">&copy; Desenvolvidor por: <b>Guilherme</b></p>
 
-   <img class="icon" src="img/tel.png"><a href="tel:19992764511" style=" color: #205DAE; ">   
-        <small>(19) 99276-4511</small>
-    </a>
-</div>
+        <img class="icon" src="img/gmail.png"><a href="guidionisio5@gmail.com" style=" color: #205DAE;">
+            <small>guidionisio5@gmail.com</small>
+        </a>
 
+        <br>
+
+        <img class="icon" src="img/tel.png"><a href="tel:19992764511" style=" color: #205DAE; ">
+            <small>(19) 99276-4511</small>
+        </a>
+    </div>
+
+    <div id="topo">
+        <a href="#container">
+            <i class="fa-solid fa-arrow-up fa-3x"></i>
+        </a>
+    </div>
+
+    </div>
 
 </body>
+
 </html>
