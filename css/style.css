@@ -1,8 +1,60 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cor-azul{
+    text-align: center;
+    color: #FFF;
+    background-color: #1B4D92;
+    padding: 10px;
+    font-size: 35px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.link-cor{
+    color: #1B4D92;
+    font-weight: bold;
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+}
+
+.info-carro{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.adicionais-carro{
+    text-align: center;
+    margin: 0;
+}
+
 nav{
-    background-color: #205DAE; ;
+    background-color: #1B4D92; ;
     width: 100%;
     float: left;
     margin-bottom: 20px;
+    border-radius: 4px 4px 0px 0px;
 }    
 
 
@@ -30,19 +82,44 @@ nav ul{
 
 nav ul li a:hover{
     background-color: #F2F2F2;
-    color: #205DAE;
+    color: #1B4D92;
+}
+
+.centralizar{
+    text-align: center;
 }
 
 html{
     scroll-behavior: smooth;
+    background-color: #1F3A65;
 }
 
 :target{
     scroll-margin-top: 0px;
 }
 
+footer {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.icones-rodape {
+    width: 15px;
+    height: 15px;
+}
+
+#nome-cor{
+    margin: 0;
+    color: #FFF;
+}
+
+#phone-cor{
+    color: #FFF;
+}
+
 #topo{
-    background-color: #002b62;
+    background-color: #000;
     position: fixed;
     bottom: 15px;
     right: 15px;
